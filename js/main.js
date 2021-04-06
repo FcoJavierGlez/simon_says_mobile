@@ -36,8 +36,9 @@
         let iteration = 0;
         let idReset = 0;
         idReset = setInterval( () => {
-            colors.forEach( e => e.classList.toggle(`brightness_${e.id}`));
-            if (iteration == 3 )
+            if (iteration <= 2)
+                colors.forEach( e => e.classList.toggle(`brightness_${e.id}`));
+            if (iteration == 2 )
                 colors.forEach( e => e.style.backgroundColor = 'red');
             else if (iteration == 4) {
                 colors.forEach( e => e.removeAttribute("style"));
