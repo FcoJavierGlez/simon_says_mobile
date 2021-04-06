@@ -1,0 +1,84 @@
+.panel-buttons {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 250px;
+    justify-items: center;
+    width: 250px;
+}
+
+#red, #green, #yellow, #blue {
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+}
+
+#red:hover, #green:hover, #yellow:hover, #blue:hover {
+    cursor: pointer;
+}
+
+#red {
+    background-color: rgb(150, 0, 0);
+    border-top-right-radius: 100%;
+}
+
+#green {
+    background-color: rgb(0, 150, 0);
+    border-top-left-radius: 100%;
+}
+
+#yellow {
+    background-color: rgb(150, 150, 0);
+    border-bottom-left-radius: 100%;
+}
+
+#blue {
+    background-color: rgb(0, 0, 150);
+    border-bottom-right-radius: 100%;
+}
+
+.center {
+    /* background-color: black; */
+    background-image: url(../img/logo_clavit.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    z-index: 3;
+}
+
+.brightness_red {
+    animation: brightness_red 0.4s forwards;
+}
+
+@keyframes brightness_red {
+    10% {background-color: red;}
+}
+
+.brightness_green {
+    animation: brightness_green 0.4s forwards;
+}
+
+@keyframes brightness_green {
+    10% {background-color: rgb(0, 255, 0);}
+}
+
+.brightness_yellow {
+    animation: brightness_yellow 0.4s forwards;
+}
+
+@keyframes brightness_yellow {
+    10% {background-color: rgb(255, 255, 0);}
+}
+
+.brightness_blue {
+    animation: brightness_blue 0.4s forwards;
+}
+
+@keyframes brightness_blue {
+    10% {background-color: rgb(0, 75, 255);}
+}

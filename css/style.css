@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --color_clavit: #3CF3BE;
+}
+
+* {
+    font-family: 'Nunito';
+}
+
+body {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* GAME */
+
+.game {
+    border: 5px solid var(--color_clavit);
+    border-radius: 20px;
+    /* display: grid;
+    grid-template-rows: repeat(2, 43%) 14%; */
+    padding: 5px;
+    height: 400px;
+    width: 300px;
+}
+
+/* INFO */
+
+.info {
+    border-bottom: 2px solid black;
+    margin-bottom: 2px;
+    height: 10%;
+}
+
+.score_info {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    padding: 0 6px;
+}
+
+#successes {
+    text-align: right;
+    width: 15%;
+}
+
+.buttons {
+    align-items: center;
+    column-gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 50px;
+    padding: 0;
+    width: 50px;
+}
+
+#stop {
+    border: 2px solid rgb(205,0,0);
+    background-image: url(../img/buttons_icon/stop.png);
+}
+
+#add {
+    border: 2px solid var(--color_clavit);
+    background-image: url(../img/buttons_icon/add.png);
+}
+
+#stop, #add:hover {
+    cursor: pointer;
+}
+
+#stop:focus, #add:focus {
+    outline: none;
+}
+
+#stop:active, #add:active {
+    animation: brightness 1s;
+}
+
+@keyframes brightness {
+    from {filter: brightness(1);}
+    to {filter: brightness(1.2);}
+}
+
+/* BOARDGAME */
+
+.boardgame {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
