@@ -1,3 +1,7 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .panel-buttons {
     align-items: center;
     display: grid;
