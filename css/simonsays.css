@@ -15,7 +15,11 @@
 
 #red:hover, #green:hover, #yellow:hover, #blue:hover {
     cursor: pointer;
+}
+
+#red:focus:active, #green:focus:active, #yellow:focus:active, #blue:focus:active {
     box-shadow: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #red {
